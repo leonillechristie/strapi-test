@@ -34,12 +34,10 @@ class App extends React.Component {
     return (
       <div className="App">
         <h1>Merch Inventory</h1>
-  
         <StockEventsTable 
           products={this.state.fetchedProducts} 
           stockEvents={this.state.fetchedStockEvents} 
         />
-  
       </div>
     );
   }
