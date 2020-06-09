@@ -15,12 +15,12 @@ class App extends React.Component {
   async componentDidMount(){
     const productsRes = await axios({
       method: 'GET',
-      url: 'http://localhost:1337/products'
+      url: 'https://strapi-postrgres-api.herokuapp.com/products'
     })
 
     const stockEventsRes = await axios({
       method: 'GET',
-      url: 'http://localhost:1337/stockevents'
+      url: 'https://strapi-postrgres-api.herokuapp.com/stockevents'
     })
 
     const fetchedProducts = productsRes.data
